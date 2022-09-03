@@ -1,13 +1,5 @@
 @import './variables';
 
-//Mixin 
-
-@mixin imageSize($width) {
-    width: $width;
-    display: block;
-    margin: 0 auto;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -38,56 +30,13 @@ body {
             color: $tertiary-color;
         }
     }
-
-    
 }
 
 //Main
 
 main {
-    .card {
+    .text {
         color: $text-color;
-        width: 200px;
-        img {
-            @include imageSize(100px);
-        }
-    }
-    .card2 {
-        color: $text-color;
-        width: 700px;
-
-        img {
-            @include imageSize(80px);
-            margin-left: 10px;
-        }
-
-    }
-
-    .profileCard {
-        img {
-            @include imageSize(200px);
-        }
-        color: $text-color;
-    }
-
-    .contacts {
-        width: 300px;
-        img {
-            @include imageSize(60px);
-        }
-    
-
-    }
-
-    .text-center {
-        width: 500px;
-    }
-
-    .btn {
-        color: $primary-color;
-        background-color: $secondary-color;
-        &:hover {
-            background-color: $tertiary-color;
-        }
     }
 }
+

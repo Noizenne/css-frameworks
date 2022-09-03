@@ -10947,48 +10947,6 @@ body {
   color: #ff009d;
 }
 
-main .card {
+main .text {
   color: #707070;
-  width: 200px;
-}
-main .card img {
-  width: 100px;
-  display: block;
-  margin: 0 auto;
-}
-main .card2 {
-  color: #707070;
-  width: 700px;
-}
-main .card2 img {
-  width: 80px;
-  display: block;
-  margin: 0 auto;
-  margin-left: 10px;
-}
-main .profileCard {
-  color: #707070;
-}
-main .profileCard img {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-}
-main .contacts {
-  width: 300px;
-}
-main .contacts img {
-  width: 60px;
-  display: block;
-  margin: 0 auto;
-}
-main .text-center {
-  width: 500px;
-}
-main .btn {
-  color: #496A81;
-  background-color: #FFC482;
-}
-main .btn:hover {
-  background-color: #ff009d;
 }

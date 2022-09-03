@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <!--Navbar-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand active" aria-current="page" href="index.html">Homepage</a>
@@ -33,15 +34,17 @@
           </nav>
     </header>
     
+    <!--Main Content-->
     <main>
-        <div class="wall row row-cols-2 justify-content-between m-4">
-            <div class="card m-2">
-                <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-5" alt="Profile picture of a basic woman avatar with black hair and glasses.">
-                <p class="fs-4 d-flex justify-content-center">Karla Mae Rabe</p>
-                <p class="fs-5 d-flex justify-content-center me-2">Student at Noroff</p>
-            </div>
-            <div class="card2 bg-light rounded ">
-                <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-3" alt="Profile picture of a basic woman avatar in an orange background with black hair and glasses.">
+        <div class="container-fluid mt-3">
+            <div class="row justify-content-between">
+              <div class="col-lg-2 bg-light rounded align-items-center">
+                <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-3" style="width:100px;" alt="Profile picture of a basic woman avatar with black hair and glasses.">
+                <p class="text fs-5 d-flex justify-content-center">Karla Mae Rabe</p>
+                <p class="text fs-6 d-flex justify-content-center me-2">Student at Noroff</p>
+              </div>
+              <div class="col-sm-9 bg-light rounded mt-2">
+                <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-3" style="width:80px;" alt="Profile picture of a basic woman avatar in an orange background with black hair and glasses.">
                 <form>
                     <div class="form-group mb-2">
                         <label for="textArea"></label>
@@ -49,38 +52,37 @@
                       </div>
                       <button class="btn mb-3">Post</button>
                 </form>
+              </div>
             </div>
-        </div>
-        <div class="wall2 d-flex flex-column align-items-end m-3">
-            <h1 class="align-self-center me-5 $white">Latests Posts</h1>
-            <div class="card2 d-flex bg-light rounded m-2">
-                <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
+          </div>
+
+          <div class="container-fluid mt-3">
+            <div class="row justify-content-end">
+                <h1 class="d-flex justify-content-center">Latests Posts</h1>
+              <div class="col-lg-9 bg-light rounded align-items-center">
+                <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
                 <div class="card3">
-                <h2>Anne</h2>
-                <form>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </form>
-            </div>
-            </div>
-            <div class="card2 d-flex bg-light rounded m-2 ">
-                <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
-                <div class="card3">
-                    <h2>Anne</h2>
-                    <form>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </form>
+                   <h2>Anne</h2>
+                   <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
+              </div>
+                <div class="col-lg-9 bg-light rounded align-items-center my-3">
+                    <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
+                    <div class="card3">
+                       <h2>Anne</h2>
+                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 bg-light rounded align-items-center">
+                    <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
+                    <div class="card3">
+                       <h2>Anne</h2>
+                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="card2 d-flex bg-light rounded m-2">
-                <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
-                <div class="card3">
-                    <h2>Anne</h2>
-                    <form>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </form>
-                </div>
-            </div>
-        </div>
+           </div>
     </main>
     <footer class="mt-3">
         <p>&copy; 2022 Karla Mae Rabe</p>
