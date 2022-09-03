@@ -26,34 +26,20 @@ body {
 
 //Nav
 
-nav {
+.navbar {
+    
     background-color: $accent-color;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 20px;
+    
+    .nav-link, .navbar-brand {
+        color: $secondary-color;
 
-    ul {
-        @extend nav;
-        justify-content: center;
-    }
-
-    li {
-        @extend nav;
-        list-style: none;
-        margin: 5px;
-
-        a {
-            color: $secondary-color;
-            text-decoration: none;
-
-            &:hover {
-                color: $tertiary-color;
-                font-size: 31px;
-                transition: 1s;
-            }
+        &:active {
+            color: $tertiary-color;
         }
     }
+
+    
 }
 
 //Main
