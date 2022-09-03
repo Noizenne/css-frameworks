@@ -84,7 +84,8 @@ main {
         color: $text-color;
     }
 
-    .friends {
+    .contacts {
+        width: 300px;
         img {
             @include imageSize(60px);
         }

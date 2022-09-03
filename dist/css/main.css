@@ -10987,7 +10987,10 @@ main .profileCard img {
   display: block;
   margin: 0 auto;
 }
-main .friends img {
+main .contacts {
+  width: 300px;
+}
+main .contacts img {
   width: 60px;
   display: block;
   margin: 0 auto;
