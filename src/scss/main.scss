@@ -1,5 +1,13 @@
 @import './variables';
 
+//Mixin 
+
+@mixin imageSize($width) {
+    width: $width;
+    display: block;
+    margin: 0 auto;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -38,8 +46,35 @@ nav {
         a {
             color: $secondary-color;
             text-decoration: none;
+
+            &:hover {
+                color: $tertiary-color;
+                font-size: 31px;
+                transition: 1s;
+            }
         }
     }
 }
 
 //Main
+
+main {
+    .card {
+        color: $text-color;
+        width: 300px;
+        img {
+            @include imageSize(100px);
+        }
+    }
+    .card2 {
+        color: $text-color;
+        width: 500px;
+
+        img {
+
+            @include imageSize(80px);
+            margin-left: 10px;
+        }
+
+    }
+}

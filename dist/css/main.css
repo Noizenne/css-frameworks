@@ -10937,6 +10937,7 @@ body {
 }
 
 nav, nav li, nav ul {
+  background-color: #2B3A67;
   font-size: 30px;
   display: flex;
   justify-content: space-between;
@@ -10952,4 +10953,29 @@ nav li {
 nav li a {
   color: #FFC482;
   text-decoration: none;
+}
+nav li a:hover {
+  color: #ff009d;
+  font-size: 31px;
+  transition: 1s;
+}
+
+main .card {
+  color: #707070;
+  width: 300px;
+}
+main .card img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+main .card2 {
+  color: #707070;
+  width: 500px;
+}
+main .card2 img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 10px;
 }
