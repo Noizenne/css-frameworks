@@ -71,10 +71,28 @@ main {
         width: 500px;
 
         img {
-
             @include imageSize(80px);
             margin-left: 10px;
         }
 
+    }
+
+    .profileCard {
+        img {
+            @include imageSize(200px);
+        }
+        color: $text-color;
+    }
+
+    .friends {
+        img {
+            @include imageSize(60px);
+        }
+    
+
+    }
+
+    .text-center {
+        width: 500px;
     }
 }

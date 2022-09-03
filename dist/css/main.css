@@ -10979,3 +10979,19 @@ main .card2 img {
   margin: 0 auto;
   margin-left: 10px;
 }
+main .profileCard {
+  color: #707070;
+}
+main .profileCard img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+main .friends img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+main .text-center {
+  width: 500px;
+}

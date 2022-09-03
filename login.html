@@ -11,7 +11,9 @@
     <header>
         <nav>
             <div class="container">
-                <span>Homepage</span>
+                <li>
+                    <a href="index.html">Homepage</a>
+                </li>
             </div>
             <div class="input-group rounded">
                 <input type="search" class="form-control-sm rounded" placeholder="Search">
@@ -22,17 +24,39 @@
             <div>
                 <ul>
                     <li>
-                        <a href="">Profile</a>
+                        <a href="profile.html">Profile</a>
                     </li>
                     <li>
-                        <a href="">Login</a>
+                        <a href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     
-    <main></main>
-    <footer></footer>
+    <main class="d-flex justify-content-center">
+        <form class="text-center bg-light border border-dark rounded mt-3 p-5" action="#!">
+
+            <p class="h4 mb-4">Login here</p>
+        
+            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+        
+            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+        
+            <div class="d-flex justify-content-around">
+                <div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-info btn-block my-4" type="submit">Login</button>
+        
+        </form>
+    </main>
+    <footer class="">
+        <p>&copy; 2022 Karla Mae Rabe</p>
+    </footer>
 </body>
 </html>
