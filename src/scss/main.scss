@@ -19,7 +19,7 @@
 body {
     background-color: $primary-color;
     color: $secondary-color;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -61,14 +61,14 @@ nav {
 main {
     .card {
         color: $text-color;
-        width: 300px;
+        width: 200px;
         img {
             @include imageSize(100px);
         }
     }
     .card2 {
         color: $text-color;
-        width: 500px;
+        width: 700px;
 
         img {
             @include imageSize(80px);
@@ -94,5 +94,13 @@ main {
 
     .text-center {
         width: 500px;
+    }
+
+    .btn {
+        color: $primary-color;
+        background-color: $secondary-color;
+        &:hover {
+            background-color: $tertiary-color;
+        }
     }
 }

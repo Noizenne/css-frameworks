@@ -10931,7 +10931,7 @@ textarea.form-control-lg {
 body {
   background-color: #496A81;
   color: #FFC482;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -10962,7 +10962,7 @@ nav li a:hover {
 
 main .card {
   color: #707070;
-  width: 300px;
+  width: 200px;
 }
 main .card img {
   width: 100px;
@@ -10971,7 +10971,7 @@ main .card img {
 }
 main .card2 {
   color: #707070;
-  width: 500px;
+  width: 700px;
 }
 main .card2 img {
   width: 80px;
@@ -10994,4 +10994,11 @@ main .friends img {
 }
 main .text-center {
   width: 500px;
+}
+main .btn {
+  color: #496A81;
+  background-color: #FFC482;
+}
+main .btn:hover {
+  background-color: #ff009d;
 }
