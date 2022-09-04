@@ -10946,7 +10946,33 @@ body {
 .navbar .nav-link:active, .navbar .navbar-brand:active {
   color: #ff009d;
 }
+.navbar .btn {
+  background-color: #FFC482;
+}
+.navbar .btn:hover {
+  background-color: white;
+  color: black;
+}
 
 main .text {
   color: #707070;
+}
+main .btn {
+  background-color: #FFC482;
+}
+
+@media (max-width: 992px) {
+  .profileImg {
+    justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main, footer {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

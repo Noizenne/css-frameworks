@@ -30,6 +30,16 @@ body {
             color: $tertiary-color;
         }
     }
+
+    .btn {
+        background-color: $secondary-color;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
 }
 
 //Main
@@ -38,5 +48,30 @@ main {
     .text {
         color: $text-color;
     }
+
+    .btn {
+        background-color: $secondary-color;
+    }
 }
 
+//Media query
+
+@media (max-width: 992px) {
+
+    .profileImg {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main, footer {
+       width: 80%;
+       margin: 0 auto;
+    }
+}

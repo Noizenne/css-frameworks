@@ -27,7 +27,7 @@
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn" type="submit">Search</button>
                 </form>
               </div>
             </div>
@@ -35,48 +35,67 @@
     </header>
     
     <!--Main Content-->
+
     <main>
         <div class="container-fluid mt-3">
+
+          <!--Profile card-->
+
             <div class="row justify-content-between">
               <div class="col-lg-2 bg-light rounded align-items-center">
-                <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-3" style="width:100px;" alt="Profile picture of a basic woman avatar with black hair and glasses.">
+                <div class="d-flex justify-content-center">
+                  <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-3" style="width:100px;" alt="Profile picture of a basic woman avatar with black hair and glasses.">
+                </div>
                 <p class="text fs-5 d-flex justify-content-center">Karla Mae Rabe</p>
                 <p class="text fs-6 d-flex justify-content-center me-2">Student at Noroff</p>
               </div>
-              <div class="col-sm-9 bg-light rounded mt-2">
+
+              <!--Post input-->
+
+              <div class="col-lg-9 bg-light rounded mt-2">
+                <div class="profileImg d-flex">
                 <img src="/images/basic-shape-avatar-1632968.jpg" class="rounded-circle mt-3" style="width:80px;" alt="Profile picture of a basic woman avatar in an orange background with black hair and glasses.">
+                </div>
                 <form>
                     <div class="form-group mb-2">
                         <label for="textArea"></label>
                         <textarea class="form-control" id="exampleFormControlTextarea3" rows="7">Write something here...</textarea>
                       </div>
-                      <button class="btn mb-3">Post</button>
+                      <button class="btn mb-3 border border-dark">Post</button>
                 </form>
               </div>
             </div>
           </div>
 
+          <!--Latests posts-->
+
           <div class="container-fluid mt-3">
             <div class="row justify-content-end">
                 <h1 class="d-flex justify-content-center">Latests Posts</h1>
-              <div class="col-lg-9 bg-light rounded align-items-center">
-                <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
-                <div class="card3">
-                   <h2>Anne</h2>
+              <div class="col-lg-9 d-flex bg-light rounded align-items-center">
+                <div>
+                 <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
+                </div>
+                 <div class="card my-3 px-2">
+                   <h2 class="d-flex justify-content-between">Anne <small class="align-self-center" style="color: gray; font-size: 16px;">21.02.22 22.20</small></h2>
                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-                <div class="col-lg-9 bg-light rounded align-items-center my-3">
+                <div class="col-lg-9 d-flex bg-light rounded align-items-center my-3">
+                  <div>
                     <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
-                    <div class="card3">
-                       <h2>Anne</h2>
+                   </div> 
+                    <div class="card my-3 px-2">
+                      <h2 class="d-flex justify-content-between">Anne <small class="align-self-center" style="color: gray; font-size: 16px;">21.02.22 22.20</small></h2>
                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                   </div>
-                  <div class="col-lg-9 bg-light rounded align-items-center">
-                    <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
-                    <div class="card3">
-                       <h2>Anne</h2>
+                  <div class="col-lg-9 d-flex bg-light rounded align-items-center">
+                    <div>
+                      <img src="/images/woman-avatar-1632963.jpg" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture of a basic woman avatar in a blue background with short hair and black lips.">
+                     </div>
+                    <div class="card my-3 px-2">
+                      <h2 class="d-flex justify-content-between">Anne <small class="align-self-center" style="color: gray; font-size: 16px;">21.02.22 22.20</small></h2>
                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                   </div>
@@ -84,6 +103,9 @@
             </div>
            </div>
     </main>
+
+    <!--Footer-->
+    
     <footer class="mt-3">
         <p>&copy; 2022 Karla Mae Rabe</p>
     </footer>
