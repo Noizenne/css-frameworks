@@ -4,7 +4,7 @@
 
 body {
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $text-color;
     width: 60%;
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +18,7 @@ body {
     font-size: 20px;
     
     .nav-link, .navbar-brand {
-        color: $secondary-color;
+        color: $text-color;
 
         &:active {
             color: $tertiary-color;
@@ -39,15 +39,28 @@ body {
 //Main
 
 main {
-    .text {
-        color: $text-color;
+    .text, p, h2, .contacts {
+        color: $secondary-color;
     }
 
     .btn {
-        background-color: $secondary-color;
+        background-color: $tertiary-color;
     }
 }
 
+
+.hero {
+    background-color: $secondary-color;
+
+    .loginBtn, .registerBtn {
+        font-size: 30px;
+        background-color: $tertiary-color;
+        color: $text-color;
+    }
+    .registerBtn {
+        background-color: $fourth-color;
+    }
+}
 //Form
 
 label {
@@ -60,6 +73,12 @@ label {
     font-size: 15px;
 }
 
+
+// Footer
+
+footer {
+    width: 60%;
+}
 
 
 //Media query

@@ -10923,36 +10923,48 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-color: #496A81;
-  color: #FFC482;
+  background-color: #111111;
+  color: #FFFBFC;
   width: 60%;
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-  background-color: #2B3A67;
+  background-color: #2F7075;
   font-size: 20px;
 }
 .navbar .nav-link, .navbar .navbar-brand {
-  color: #FFC482;
+  color: #FFFBFC;
 }
 .navbar .nav-link:active, .navbar .navbar-brand:active {
-  color: #ff009d;
+  color: #62BBC1;
 }
 .navbar .btn {
-  background-color: #FFC482;
+  background-color: #30332E;
 }
 .navbar .btn:hover {
   background-color: white;
   color: black;
 }
 
-main .text {
-  color: #707070;
+main .text, main p, main h2, main .h2, main .contacts {
+  color: #30332E;
 }
 main .btn {
-  background-color: #FFC482;
+  background-color: #62BBC1;
+}
+
+.hero {
+  background-color: #30332E;
+}
+.hero .loginBtn, .hero .registerBtn {
+  font-size: 30px;
+  background-color: #62BBC1;
+  color: #FFFBFC;
+}
+.hero .registerBtn {
+  background-color: #17383A;
 }
 
 label {
@@ -10963,6 +10975,10 @@ label {
   display: none;
   color: red;
   font-size: 15px;
+}
+
+footer {
+  width: 60%;
 }
 
 @media (max-width: 992px) {
