@@ -1,11 +1,5 @@
 @import './variables';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 //Body
 
 body {
@@ -53,6 +47,20 @@ main {
         background-color: $secondary-color;
     }
 }
+
+//Form
+
+label {
+    display: block;
+}
+
+.formError {
+    display: none;
+    color: red;
+    font-size: 15px;
+}
+
+
 
 //Media query
 

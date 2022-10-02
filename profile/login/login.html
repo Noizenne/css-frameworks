@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <header>
+
+      <!--Navbar-->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Homepage</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/profile.html">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/login.html">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <!--Login form-->
+
+    <main class="d-flex justify-content-center">
+        <form action="/pages/profile.html" class="text-center bg-light border border-dark rounded mt-3 p-5" id="formId">
+            <p class="h4 mb-4">Login here</p>
+            <div class="input-group">
+              <input type="email" id="defaultLoginFormEmail" class="input form-control mb-4" placeholder="E-mail" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+              <input type="password" id="defaultLoginFormPassword" class="input form-control mb-4" placeholder="Password" required>
+              <span class="error-message"></span>
+            </div>
+        
+            <div class="d-flex row justify-content-center">
+              <button type="submit" id="submit" class="w-25 btn btn-info btn-block my-4">Login</button>
+              <p >Not registered? <a href="/profile/register/newUser.html">Create user here</a></p>
+            </div>
+        </form>
+    </main>
+
+        <!--Footer-->
+        
+    <footer>
+        <p>&copy; 2022 Karla Mae Rabe</p>
+    </footer>
+    <script type="module" src="/js/user/register.mjs"></script>
+    <script type="module" src="/js/api/variables.mjs"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

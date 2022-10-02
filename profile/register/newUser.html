@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>Register new user</title>
+  </head>
+  <body>
+    <header>
+      <!--Navbar-->
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/profile/index.html">Homepage</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/login/index.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/profile/login/login.html"
+                  >Login</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Registration form-->
+
+    <main class="d-flex justify-content-center">
+      <form
+        id="registerForm"
+        class="d-flex col-md-5 text-center bg-light border border-dark rounded mt-3 p-5"
+      >
+        <div>
+          <p class="h4 mb-4">Register here</p>
+
+          <!--Username input-->
+          <div>
+            <label for="username" class="form-label">
+              <input
+                type="text"
+                placeholder="Enter your username"
+                name="name"
+                class="form-control"
+                required pattern="^[\w]+$"
+                title="Username can't contain symbols apart from lowercase, uppercase and underscore(_)."
+                />
+            </label>
+          </div>
+
+          <!--Email input-->
+          <div>
+            <label for="email" class="form-label">
+              <input
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                class="form-control"
+                required pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                title="Email must include noroff.no or stud.noroff.no"
+              />
+            </label>
+          </div>
+
+          <!--Passwords input-->
+          <div>
+            <label for="psw" class="form-label">
+              <input
+                type="password"
+                placeholder="Enter password"
+                name="password"
+                class="form-control"
+                required minlength="8"
+                title="Your password must have at least 8 characters"
+              />
+            </label>
+          </div>
+
+          <p>
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+          <button type="submit" class="btn btn-info btn-block my-4">
+            Complete registration
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+      <p>&copy; 2022 Karla Mae Rabe</p>
+    </footer>
+    <script type="module" src="/js/index.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

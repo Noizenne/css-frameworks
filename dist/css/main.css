@@ -10922,12 +10922,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: #496A81;
   color: #FFC482;
@@ -10959,6 +10953,16 @@ main .text {
 }
 main .btn {
   background-color: #FFC482;
+}
+
+label {
+  display: block;
+}
+
+.formError {
+  display: none;
+  color: red;
+  font-size: 15px;
 }
 
 @media (max-width: 992px) {
