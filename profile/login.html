@@ -39,19 +39,31 @@
     <!--Login form-->
 
     <main class="d-flex justify-content-center">
-        <form action="/pages/profile.html" class="text-center bg-light border border-dark rounded mt-3 p-5" id="formId">
+        <form action="/pages/profile.html" id="loginForm" class="text-center bg-light border border-dark rounded mt-3 p-5" id="formId">
             <p class="h4 mb-4">Login here</p>
             <div class="input-group">
-              <input type="email" id="defaultLoginFormEmail" class="input form-control mb-4" placeholder="E-mail" required>
-              <span class="error-message"></span>
+              <input
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                class="form-control"
+                required pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                title="Email must include noroff.no or stud.noroff.no"
+              />
             </div>
-            <div class="input-group">
-              <input type="password" id="defaultLoginFormPassword" class="input form-control mb-4" placeholder="Password" required>
-              <span class="error-message"></span>
+            <div class="input-group mt-3">
+              <input
+                type="password"
+                placeholder="Enter password"
+                name="password"
+                class="form-control"
+                required minlength="8"
+                title="Your password must have at least 8 characters"
+              />
             </div>
         
             <div class="d-flex row justify-content-center">
-              <button type="submit" id="submit" class="w-25 btn btn-info btn-block my-4">Login</button>
+              <button type="submit" class="w-25 btn btn-info btn-block my-4">Login</button>
               <p >Not registered? <a href="/profile/register/newUser.html">Create user here</a></p>
             </div>
         </form>
@@ -62,8 +74,7 @@
     <footer class="fixed-bottom m-auto">
         <p>&copy; 2022 Karla Mae Rabe</p>
     </footer>
-    <script type="module" src="/js/user/register.mjs"></script>
-    <script type="module" src="/js/api/variables.mjs"></script>
+    <script type="module" src="/js/index.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

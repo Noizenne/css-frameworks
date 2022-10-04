@@ -1,4 +1,5 @@
-import { API_SOCIAL_URL } from "../api/variables.mjs"
+import { API_SOCIAL_URL } from "../variables.mjs"
+
 
 const action = "/auth/register";
 const method = "post";
