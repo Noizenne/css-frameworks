@@ -21,7 +21,7 @@ const result = await response.json();
 
 localStorage.setItem("token", result.accessToken);
 
-// Create a loader with a message to show they have successfully logged in.
+// Create a loader with a message to show they have successfully logged in. A modal of some kind
 
 }
 
