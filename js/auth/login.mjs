@@ -1,5 +1,6 @@
 import { API_SOCIAL_URL } from "../variables.mjs"
 
+import * as storage from "../storage/index.mjs"
 
 const action = "/auth/login";
 const method = "post";
@@ -19,8 +20,9 @@ const response = await fetch(loginUrl, {
 
 const result = await response.json();
 
-localStorage.setItem("token", result.accessToken);
+storage.save("token", result.accessToken);
 
+storage.save("profile", result)
 // Create a loader with a message to show they have successfully logged in. A modal of some kind
 
 }

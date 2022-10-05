@@ -1,5 +1,6 @@
 import { setRegFormListener } from "../js/handlers/register.mjs";
 import { setLoginFormListener } from "../js/handlers/login.mjs";
+import * as post from "../js/posts/index.mjs"
 
 setRegFormListener();
 
@@ -12,3 +13,9 @@ if (path === "/proflie/login/") {
 } else if (path === "/proflie/register/") {
     setRegFormListener()
 }
+
+post.createPost()
+post.updatePost()
+post.removePost()
+post.getPost()
+post.getPosts()
