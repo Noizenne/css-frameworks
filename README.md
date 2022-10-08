@@ -1,46 +1,37 @@
 # Goal
-To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
+To apply knowledge of JavaScript techniques to implement the front end functionality for a social media application
 
 # Brief
-You are tasked with creating 3 pages in HTML using Bootstrap and SASS:
+You have been tasked with producing a new JavaScript front end client for an existing social media platform. The client application must be attractive and responsive, but you have an otherwise blank slate in terms of theme design language.
 
-1. Homepage
-2. Profile page
-3. Login page
+Using the provided API and API documentation, create a functioning user interface that allows for viewing, posting, editing and deleting social media content.
 
-The Homepage should have a feed of posts from the user’s contacts, a search bar, and a form to create a new post.
+Social API routes require authorization via JWT (JSON Web Tokens). You will need to register an account and login to access your token.
 
-The profile page should have a profile image, details about the user, a list of the user’s contacts, their posts and a form to post to their wall.
+In order to complete the required features you will also need to make use of GET, POST, PUT, and DELETE HTTP methods.
 
-The login page should have a form to login to the application. Make sure to include HTML form validation and use /profile as the action attribute.
+Using localStorage is highly recommended, especially for storing JWT tokens.
 
-You will only be working on the visuals for this project at this stage, forms do not need to submit data, for example.
-
-Submission for this project will follow the pattern used in professional development. You are required to seek feedback from your peers as well as the teachers in order to complete this assignment.
+A finished project fulfills the requirements below with an easy to use and error-free user interface
 
 # Process
-Create a design or wireframe for each page
+1. Create or select one repository to use throughout this project.
+2. Create a js2 branch from the default master or main branch.
+3. You may use either Trello or GitHub Projects to manage your development tasks. If you are using Trello please make sure that your board is public and that a link is provided in your readme.md file. Make sure to detail tasks accurately and divide them evenly if working a group.
 
-Create a new public repository on GitHub
+Examples of overly vague tasks:
 
-Create a new project folder for this repository
+* Make the HTML for the post page
+* Website Styling
+* JavaScript for API
+* Test the website
 
-Create a new git branch for this project
+Examples of detailed & accurate tasks:
 
-Create a package.json file
-
-Install Bootstrap, SASS and Live Server
-
-Configure NPM scripts in package.json
-
-Implement your design using Bootstrap and SASS overrides
-
-Create a Pull Request to merge your changes to the main branch
-
-Share this Pull Request and request peer review
-
-Discuss and implement the feedback gathered from peer review
-
-Share this Pull Request with a teacher for their approval
-
-Complete the approved Pull Request, or implement the required changes
+* Create search form HTML
+* Search form SCSS styling
+* Filter posts function
+* Implement search event listener
+* Review the API Guide and API Documentation.
+* Plan your approach, desired features and work strategy.
+* Implement the required features as per your work plan.
