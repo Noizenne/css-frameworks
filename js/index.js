@@ -1,21 +1,14 @@
-import { setRegFormListener } from "../js/handlers/register.mjs";
-import { setLoginFormListener } from "../js/handlers/login.mjs";
-import * as post from "../js/posts/index.mjs"
-
-setRegFormListener();
-
-setLoginFormListener();
+import * as listeners from "../js/handlers/index.mjs"
 
 const path = location.pathname;
 
-if (path === "/proflie/login/") {
-    setLoginFormListener()
+if (path === "/proflie/login.html") {
+    listeners.setLoginFormListener()
 } else if (path === "/proflie/register/") {
-    setRegFormListener()
+    listeners.setRegFormListener()
+} else if (path === "/profile/create/index.html") {
+    listeners.setCreatePostFormListener()
+} else if (path === "/post/edit/index.html") {
+    listeners.setUpdatePostFormListener()
 }
-
-post.createPost()
-post.updatePost()
-post.removePost()
-post.getPost()
-post.getPosts()
+ 
