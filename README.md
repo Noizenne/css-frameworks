@@ -35,3 +35,6 @@ Examples of detailed & accurate tasks:
 * Review the API Guide and API Documentation.
 * Plan your approach, desired features and work strategy.
 * Implement the required features as per your work plan.
+
+# Trello
+https://trello.com/b/O2toNDDC/javascript-2
