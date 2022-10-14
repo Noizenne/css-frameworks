@@ -12,6 +12,7 @@ export function setLoginFormListener() {
             const formData = new FormData(form);
             const profile = Object.fromEntries(formData.entries())
     
+            console.log(profile)
             // In /auth/login.mjs
             login(profile);
         })
