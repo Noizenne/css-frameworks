@@ -1,10 +1,12 @@
-import { postTemplate } from "../templates/post.mjs";
+import * as templates from "../templates/post.mjs";
 
 import * as postMethods from "../posts/index.mjs";
 
 const searchInput = document.getElementById("searchPostEl");
 
 export async function searchPost(event) {
+
+    
     const searchInputValue = event.target.value.toLowerCase();
     console.log(searchInputValue)
 
@@ -14,14 +16,15 @@ export async function searchPost(event) {
     posts.title.toLowerCase().includes(searchInputValue));
     console.log(searchResult)
 
-    const searchOutput = searchResult.map(postTemplate);
+    const searchOutput = searchResult.map(templates.postTemplate);
 
     const postContainer = document.getElementById("posts");
 
     if (searchResult.length === 0) {
         console.log("No result found")
     } else {
-        postContainer.innerHTML = searchOutput.join("");
+        // Got to find another way to display output
+        postContainer.innerHTML = searchOutput.join(" ");
     }
 }
 
