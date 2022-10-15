@@ -21,4 +21,6 @@ async function testTemplate() {
     templates.renderPostsTemplate(posts, container);
 }
 
-testTemplate()
+testTemplate();
+
+postMethods.searchPost();
