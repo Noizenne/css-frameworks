@@ -12,7 +12,7 @@ const action = "/post";
 
 function postTemplate(postData) {
     const post = document.createElement("div");
-    post.classList.add("singlePost");
+    post.classList.add("post");
     post.innerHTML = `
     <div class="bg-light rounded align-items-center pe-3 m-2">
     <h1 class="text-dark ms-2">${postData.title}</h1>
