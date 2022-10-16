@@ -4,6 +4,10 @@ import { getToken } from "./getToken.mjs";
 
 const action = "/posts";
 
+/**
+ * Requests GET to get all posts
+ */
+
 export async function getPosts() {
     const GET_POSTS_URL = `${API_SOCIAL_URL}${action}`;
 
@@ -12,6 +16,10 @@ export async function getPosts() {
    return await response.json();
 }
 
+/**
+ * Requests GET to get a single post
+ * @param {number} id
+ */
 export async function getPost(id) {
     if (!id) {
         console.log("Get requires a post ID.")

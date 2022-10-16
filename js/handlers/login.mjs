@@ -1,6 +1,10 @@
 import { login } from "../auth/login.mjs"
 
-
+/**
+ * Retreives form
+ * Adds eventlistener to submit button
+ * Sens to API
+ */
 export function setLoginFormListener() {
     const form = document.querySelector("#loginForm");
     
@@ -13,7 +17,7 @@ export function setLoginFormListener() {
             const profile = Object.fromEntries(formData.entries())
     
             console.log(profile)
-            // In /auth/login.mjs
+            
             login(profile);
         })
     }

@@ -5,6 +5,10 @@ import { getToken } from "./getToken.mjs";
 const action = "/posts";
 const method = "post";
 
+/**
+ * Requests POST to create a post
+ * @param {string} postData
+ */
 export async function createPost(postData) {
     const CREATE_POST_URL = API_SOCIAL_URL + action;
 

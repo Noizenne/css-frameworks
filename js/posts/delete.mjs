@@ -5,6 +5,11 @@ import { getToken } from "./getToken.mjs";
 const action = "/posts/";
 const method = "delete";
 
+/**
+ * Requests DELETE to remove a post
+ * @param {string} id
+ */
+
 export async function removePost(id) {
     if(!id) {
         console.log("To delete there requires a post ID.")

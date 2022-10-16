@@ -4,7 +4,10 @@ import { API_SOCIAL_URL } from "../variables.mjs"
 const action = "/auth/register";
 const method = "post";
 
-//Send to the API
+/**
+ * Authorizer new user
+ * 
+ */
 export async function register(profile) {
 const registerUrl = API_SOCIAL_URL + action;
 const body = JSON.stringify(profile);
