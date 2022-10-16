@@ -8,7 +8,7 @@ export async function getPosts() {
     const GET_POSTS_URL = `${API_SOCIAL_URL}${action}`;
 
     const response = await getToken(GET_POSTS_URL);
-    
+
    return await response.json();
 }
 

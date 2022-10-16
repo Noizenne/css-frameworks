@@ -23,8 +23,9 @@ export async function searchPost(event) {
     if (searchResult.length === 0) {
         console.log("No result found")
     } else {
-        // Got to find another way to display output
-        postContainer.innerHTML = searchOutput.join(" ");
+        postContainer.innerHTML = "";
+    
+        postContainer.append(...searchOutput);
     }
 }
 
