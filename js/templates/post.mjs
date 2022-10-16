@@ -6,13 +6,19 @@ const id = param.get("id"); */
 
 const action = "/post";
 
+/**
+ * template for a single post
+ * @param {*} postData 
+ * 
+ */
+
 function postTemplate(postData) {
     const post = document.createElement("div");
     post.classList.add("singlePost");
     post.innerHTML = `
-    <div class="bg-light rounded align-items-center">
+    <div class="bg-light rounded align-items-center pe-3 m-2">
     <h1 class="text-dark ms-2">${postData.title}</h1>
-    <div class="text-dark ms-2">${postData.body}</div>
+    <div class="text-dark ms-2 border rounded">${postData.body}</div>
     </div>`;
 
     console.log(post);
@@ -26,14 +32,18 @@ function postTemplate(postData) {
     return post;
 }
 
-
+/**
+ * template for multiple posts
+ * @param {*} postData 
+ * 
+ */
 function postsTemplate(postData) {
     const post = document.createElement("div");
     post.classList.add("post")
     post.innerHTML = `<a href="/profile${action}/?=${postData.id}">
-    <div class="bg-light rounded align-items-center m-2">
+    <div class="bg-light rounded align-items-center pe-3 m-2">
     <h1 class="text-dark ms-2">${postData.title}</h1>
-    <div class="text-dark ms-2">${postData.body}</div>
+    <div class="text-dark ms-2 border rounded">${postData.body}</div>
     <a href="/profile/post/edit/index.html"><button class="btn ms-2">Edit post</button></a>
     </div>`;
 
@@ -46,10 +56,16 @@ function postsTemplate(postData) {
     return post;
 }
 
+/**
+ * Appends single post
+ */
 function renderPostTemplate(postData, parent) {
     parent.append(postTemplate(postData));
 }
 
+/**
+ * Appends all posts
+ */
 function renderPostsTemplate(postDataList, parent) {
     parent.append(...postDataList.map(postsTemplate));
 }

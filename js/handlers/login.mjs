@@ -1,5 +1,5 @@
 import { login } from "../auth/login.mjs"
-
+import { remove } from "../storage/index.mjs";
 /**
  * Retreives form
  * Adds eventlistener to submit button
@@ -22,4 +22,3 @@ export function setLoginFormListener() {
         })
     }
 }
-    

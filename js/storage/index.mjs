@@ -11,6 +11,6 @@ export function load(key) {
     }
 }
 
-export function remove(key, value) {
+export function remove(key) {
     localStorage.removeItem(key)
 }
