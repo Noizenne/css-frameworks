@@ -15,12 +15,9 @@ if (path === "/profile/login.html") {
     listeners.setUpdatePostFormListener()
 }
  
-async function testTemplate() {
-    const posts = await postMethods.getPosts();
-    const container = document.querySelector("#posts")
-    templates.renderPostsTemplate(posts, container);
-}
 
-testTemplate();
+templates.getSinglePost();
+
+templates.getAllPosts();
 
 postMethods.searchPost();
