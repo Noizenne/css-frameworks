@@ -27,6 +27,7 @@ storage.save("token", result.accessToken);
 storage.save("profile", result)
 // Create a loader with a message to show they have successfully logged in. A modal of some kind
 alert("You have logged in!")
+location.href = "/profile/login/index.html"
 }
 
 const token = localStorage.getItem("token");

@@ -1,6 +1,4 @@
 import * as postMethods from "../posts/index.mjs"
-import { API_SOCIAL_URL } from "../variables.mjs";
-
 
 const action = "/post";
 
