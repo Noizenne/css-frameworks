@@ -7,7 +7,7 @@ const path = location.pathname;
 
 if (path === "/profile/login.html") {
     listeners.setLoginFormListener()
-} else if (path === "/proflie/register/index.html") {
+} else if (path === "/profile/register/index.html") {
     listeners.setRegFormListener()
 } else if (path === "/profile/create/index.html") {
     listeners.setCreatePostFormListener()
