@@ -5,6 +5,10 @@ import { getToken } from "./getToken.mjs";
 const action = "/posts/";
 const method = "put";
 
+/**
+ * Requests PUT to update a post
+ * @param {string} postData
+ */
 export async function updatePost(postData) {
     if(!postData.id) {
         console.log("Update requires a post ID.")

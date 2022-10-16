@@ -10,7 +10,11 @@ export function setCreatePostFormListener() {
     
             const form = event.target;
             const formData = new FormData(form);
-            const post = Object.fromEntries(formData.entries())
+            const post = Object.fromEntries(formData.entries());
+
+            if(!post.media.length) {
+                delete post.media;
+            }
     
             //Send to the API
             createPost(post);

@@ -7,7 +7,6 @@ const method = "post";
 
 /**
  * Authorizes user
- * @param {*} profile 
  */
 export async function login(profile) {
 const loginUrl = API_SOCIAL_URL + action;
@@ -27,7 +26,7 @@ storage.save("token", result.accessToken);
 
 storage.save("profile", result)
 // Create a loader with a message to show they have successfully logged in. A modal of some kind
-
+alert("You have logged in!")
 }
 
 const token = localStorage.getItem("token");

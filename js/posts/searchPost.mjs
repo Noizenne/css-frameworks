@@ -4,6 +4,11 @@ import * as postMethods from "../posts/index.mjs";
 
 const searchInput = document.getElementById("searchPostEl");
 
+/**
+ * User inputs string in the searchbar
+ * Retrieves single posts from input value
+ * 
+ */
 export async function searchPost(event) {
 
     
@@ -14,7 +19,6 @@ export async function searchPost(event) {
 
     const searchResult = posts.filter((posts) => 
     posts.title.toLowerCase().includes(searchInputValue));
-    console.log(searchResult)
 
     const searchOutput = searchResult.map(templates.postTemplate);
 
