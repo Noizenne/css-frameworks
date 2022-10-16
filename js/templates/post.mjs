@@ -1,14 +1,12 @@
 import * as postMethods from "../posts/index.mjs"
+import { API_SOCIAL_URL } from "../variables.mjs";
 
-/* const queryString = window.location.search;
-const param = new URLSearchParams(queryString);
-const id = param.get("id"); */
 
 const action = "/post";
 
 /**
  * template for a single post
- * @param {*} postData 
+ * @param {string} postData 
  * 
  */
 
@@ -20,9 +18,6 @@ function postTemplate(postData) {
     <h1 class="text-dark ms-2">${postData.title}</h1>
     <div class="text-dark ms-2 border rounded">${postData.body}</div>
     </div>`;
-
-    console.log(post);
-
     if(postData.media) {
         const img = document.createElement("img");
         img.src = postData.media;
@@ -72,7 +67,7 @@ function renderPostsTemplate(postDataList, parent) {
 
 export async function getSinglePost() {
     const posts = await postMethods.getPosts();
-    const post = posts();
+    const post = posts.pop();
     const container = document.querySelector("#post")
     renderPostTemplate(post, container);
 }
