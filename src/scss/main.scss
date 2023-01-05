@@ -36,6 +36,13 @@ body {
 
 }
 
+img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border: solid black 1px; padding: 10px;
+}
+
 //Main
 
 main {
@@ -73,6 +80,16 @@ label {
 }
 
 
+// Post
+
+#posts, .post {
+    width: 500px;
+    background-color: #ffffff;
+}
+
+.post {
+    margin-top: 30px;
+}
 // Footer
 
 footer {

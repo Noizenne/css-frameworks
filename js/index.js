@@ -7,17 +7,15 @@ const path = location.pathname;
 
 if (path === "/profile/login.html") {
     listeners.setLoginFormListener()
-} else if (path === "/profile/register/index.html") {
+} else if (path === "/profile/register/index.html" || path === "/profile/register/") {
     listeners.setRegFormListener()
-} else if (path === "/profile/create/index.html") {
+} else if (path === "/profile/create/index.html" || path === "/profile/create/index.html") {
     listeners.setCreatePostFormListener()
-} else if (path === "/post/edit/index.html") {
+} else if (path === "/post/edit/index.html" || path === "/post/edit/index.html") {
     listeners.setUpdatePostFormListener()
+} else if (path === "/profile/posts/index.html" || path === "/profile/posts/") {
+    templates.getAllPosts();
+    postMethods.searchPost();
+} else if (path === "/profile/post/index.html" || path === "/profile/post/") {
+    templates.getSinglePost();
 }
- 
-
-templates.getSinglePost();
-
-templates.getAllPosts();
-
-postMethods.searchPost();
