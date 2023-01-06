@@ -1,38 +1,40 @@
-import * as templates from "../templates/post.mjs";
+import { getPosts } from "../posts/index.mjs";
 
-import * as postMethods from "../posts/index.mjs";
+export async function searchPost() {
 
-const searchInput = document.getElementById("searchPostEl");
+    const searchInput = document.querySelector("#searchInput");
+    const searchForm = document.querySelector("#search");
+    const listingsContainer = document.querySelector(".searchResult");
+
+    searchForm.addEventListener("keyup", async (event) => {
+        event.preventDefault();
+
+        const posts = await getPosts();
+        const filteredPosts = posts.filter((post) => {
+            const title = post.title.toLowerCase();
+
+            const searchValue = searchInput.value.toLowerCase();
+
+            if(title.includes(searchValue)) {
+                listingsContainer.innerHTML = `<div class="post">
+                    <a href="/profile/post/index.html?id=${post.id}">
+                    <div class="d-flex justify-content-center text-align-center">${post.title}</div>
+                     <div class="d-flex justify-content-center"><img style="solid 1px white" src="${post.media}"</img></div></a>
+                     <div>`;
+            return true;
+            }
+        });
+
+        if(filteredPosts === 0 || filteredPosts === null) {
+            listingsContainer.innerHTML = `<p>No matches</p>`;
+        }
+
+        getPosts(filteredPosts, listingsContainer);
+    });
+}
 
 /**
  * User inputs string in the searchbar
  * Retrieves single posts from input value
  * 
  */
-export async function searchPost(event) {
-
-    
-    const searchInputValue = event.target.value.toLowerCase();
-    console.log(searchInputValue)
-
-    const posts = await postMethods.getPosts();
-
-    const searchResult = posts.filter((posts) => 
-    posts.title.toLowerCase().includes(searchInputValue));
-
-    const searchOutput = searchResult.map(templates.postTemplate);
-
-    const postContainer = document.getElementById("posts");
-
-    if (searchResult.length === 0) {
-        console.log("No result found")
-    } else {
-        postContainer.innerHTML = "";
-    
-        postContainer.append(...searchOutput);
-    }
-}
-
-if(searchInput) {
-    searchInput.addEventListener("keyup", searchPost);
-}

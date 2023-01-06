@@ -36,6 +36,13 @@ body {
 
 }
 
+img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border: solid black 1px; padding: 10px;
+}
+
 //Main
 
 main {
@@ -72,7 +79,21 @@ label {
     font-size: 15px;
 }
 
+// Profile Posts
 
+.profile {
+    margin: 1rem;
+}
+// Post
+
+#posts, .post {
+    width: 500px;
+    background-color: #ffffff;
+}
+
+.post {
+    margin-top: 30px;
+}
 // Footer
 
 footer {

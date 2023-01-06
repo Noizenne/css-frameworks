@@ -35,12 +35,26 @@
     <main>
 
       <!-- Search form -->
-          <div class="row justify-content-center">
-            <form class="d-flex mt-4" style="width: 50%;" role="search">
-              <input class="form-control me-2" id="searchPostEl" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <!--Comments left by contacts-->
-            <h1>Comments</h1>
+      <section class="my-3">
+        <div class="d-flex justify-content-center">
+          <form class="d-flex" role="search" id="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="searchInput"
+            />
+          </form>
+        </div>
+        <div class="row">
+          <div class="searchResult col p-3 me-3"></div>
+        </div>
+      </section>
+          <div>
+            <!--
+              Posts left by contacts-->
+            <h1>Posts</h1>
             <div class="comments" id="posts">
               
               </div>

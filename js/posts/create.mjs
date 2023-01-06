@@ -16,6 +16,10 @@ export async function createPost(postData) {
         method,
         body: JSON.stringify(postData)
     });
+
+    if(response.ok) {
+        console.log("Created a new post!")
+    }
     
     return await response.json();
     

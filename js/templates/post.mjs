@@ -1,6 +1,8 @@
 import * as postMethods from "../posts/index.mjs"
 
-const action = "/post";
+const parameterString = window.location.search;
+const searchParams = new URLSearchParams(parameterString);
+const id = searchParams.get("id");
 
 /**
  * template for a single post
@@ -16,6 +18,7 @@ function postTemplate(postData) {
     <h1 class="text-dark ms-2">${postData.title}</h1>
     <div class="text-dark ms-2 border rounded">${postData.body}</div>
     </div>`;
+
     if(postData.media) {
         const img = document.createElement("img");
         img.src = postData.media;
@@ -33,11 +36,10 @@ function postTemplate(postData) {
 function postsTemplate(postData) {
     const post = document.createElement("div");
     post.classList.add("post")
-    post.innerHTML = `<a href="/profile${action}/?=${postData.id}">
+    post.innerHTML = `<a href="/profile/post/index.html?id=${postData.id}">
     <div class="bg-light rounded align-items-center pe-3 m-2">
     <h1 class="text-dark ms-2">${postData.title}</h1>
     <div class="text-dark ms-2 border rounded">${postData.body}</div>
-    <a href="/profile/post/edit/index.html"><button class="btn ms-2">Edit post</button></a>
     </div>`;
 
     if(postData.media) {
@@ -64,8 +66,7 @@ function renderPostsTemplate(postDataList, parent) {
 }
 
 export async function getSinglePost() {
-    const posts = await postMethods.getPosts();
-    const post = posts.pop();
+    const post = await postMethods.getPost(id);
     const container = document.querySelector("#post")
     renderPostTemplate(post, container);
 }
