@@ -5,7 +5,6 @@ export function templateProfilePosts(profileData) {
   const section = document.createElement("div");
   section.classList.add("profile");
   section.innerHTML = `<div class="row justify-content-end">
-  <h1 class="d-flex justify-content-center">Latests Posts</h1>
 <div class="col-lg-9 d-flex bg-light rounded align-items-center">
   <div>
    <img src="${profileData.avatar}" onerror="this.src='/images/basic-shape-avatar-1632968.jpg'" class="rounded-circle m-4" style="width: 80px;" alt="Profile picture.">

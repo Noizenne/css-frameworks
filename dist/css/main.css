@@ -10821,6 +10821,10 @@ label {
   font-size: 15px;
 }
 
+.profile {
+  margin: 1rem;
+}
+
 #posts, .post {
   width: 500px;
   background-color: #ffffff;
