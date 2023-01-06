@@ -18,4 +18,8 @@ if (path === "/profile/login.html") {
     postMethods.searchPost();
 } else if (path === "/profile/post/index.html" || path === "/profile/post/") {
     templates.getSinglePost();
-}
+} else if (path === "/profile/index.html" ) {
+    templates.feedTemplate();
+} else if(path === "/profile/login/index.html" || path === "/profile/login/") {
+    templates.profileTemplate();
+} 
