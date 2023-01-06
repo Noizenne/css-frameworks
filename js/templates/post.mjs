@@ -40,7 +40,6 @@ function postsTemplate(postData) {
     <div class="bg-light rounded align-items-center pe-3 m-2">
     <h1 class="text-dark ms-2">${postData.title}</h1>
     <div class="text-dark ms-2 border rounded">${postData.body}</div>
-    <a href="/profile/post/edit/index.html"><button class="btn ms-2">Edit post</button></a>
     </div>`;
 
     if(postData.media) {

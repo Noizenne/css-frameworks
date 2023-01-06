@@ -1,5 +1,4 @@
 import * as listeners from "../js/handlers/index.mjs"
-
 import * as templates from "../js/templates/index.mjs"
 import * as postMethods from "../js/posts/index.mjs"
 
@@ -18,8 +17,9 @@ if (path === "/profile/login.html") {
     postMethods.searchPost();
 } else if (path === "/profile/post/index.html" || path === "/profile/post/") {
     templates.getSinglePost();
-} else if (path === "/profile/index.html" ) {
+} else if (path === "/profile/index.html" || path === "/profile/" ) {
     templates.feedTemplate();
+    templates.profilePosts();
 } else if(path === "/profile/login/index.html" || path === "/profile/login/") {
     templates.profileTemplate();
 } 

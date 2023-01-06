@@ -1,7 +1,6 @@
 import { getProfile } from "../profile/read.mjs";
 
 export function templateProfilePageInfo(profileData) {
-    console.log(profileData)
   const section = document.createElement("div");
   section.classList.add("profile");
   section.innerHTML = `<div class="row justify-content-between">
