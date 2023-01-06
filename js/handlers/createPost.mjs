@@ -11,6 +11,7 @@ export function setCreatePostFormListener() {
             const form = event.target;
             const formData = new FormData(form);
             const post = Object.fromEntries(formData.entries());
+            post.tags = post.tags.split(", ").map((item) => item.trim());
 
             if(!post.media.length) {
                 delete post.media;
